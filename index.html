@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reeds Group | Technology, Infrastructure & Intelligence</title>
     <meta name="description" content="Reeds Group gateway website. Engineering intelligent systems, infrastructure, and technology for the modern world.">
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="global-tech.html">Reeds Global Tech</a>
+        <a href="comm-network.html">Reeds Comm. Network</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
     <header class="global-header">
         <div class="header-container">
             <div class="header-logo"><a href="index.html">REEDS GROUP</a></div>
@@ -19,18 +27,21 @@
                 <ul>
                     <li><a href="global-tech.html">Reeds Global Tech</a></li>
                     <li><a href="comm-network.html">Reeds Comm. Network</a></li>
-                    <li><a href="javascript:void(0)">Team</a></li>
-                    <li><a href="javascript:void(0)">Insights</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <a href="#contact" class="btn btn-primary btn-sm">Contact Us</a>
+                <a href="contact.html" class="btn highlight-red-btn btn-sm">Get In Touch</a>
             </div>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
 
     <main>
-        <!-- Full Screen Hero -->
+        <!-- Hero -->
         <section class="hero-section">
             <canvas id="network-canvas"></canvas>
             <div class="hero-content">
@@ -38,7 +49,35 @@
                 <p class="hero-subtitle fade-in delay-1">Reeds companies operate across advanced technology systems, communications infrastructure, security equipment, and commercial operations serving governments, enterprises, and infrastructure sectors.</p>
                 <div class="hero-actions fade-in delay-2">
                     <a href="#gateway" class="btn btn-primary">Explore Our Companies</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Our Team</a>
+                    <a href="contact.html" class="btn btn-secondary">Contact Our Team</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13l5 5 5-5"/><path d="M7 6l5 5 5-5"/></svg>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid fade-in-up">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15">0<span class="stat-suffix">+</span></div>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="200">0<span class="stat-suffix">+</span></div>
+                        <div class="stat-label">Clients Served</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50">0<span class="stat-suffix">+</span></div>
+                        <div class="stat-label">Active Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Industry Verticals</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -46,9 +85,7 @@
         <!-- Gateway Section -->
         <section id="gateway" class="gateway-section section-padding">
             <div class="gateway-container fade-in-up">
-                
-                <!-- Panel 1 -->
-                <div class="gateway-panel panel-left group-hover">
+                <div class="gateway-panel panel-left">
                     <div class="panel-content">
                         <h2>Reeds Global Tech Company</h2>
                         <p class="panel-desc">A commercial and industrial enterprise involved in security equipment, communications gadgets, business equipment, import and export, marketing and trade, property acquisition and leasing, industrial security solutions, manufacturing ventures, tourism investments, and support for charitable initiatives.</p>
@@ -63,9 +100,7 @@
                     </div>
                     <div class="panel-graphics highlight-blue"></div>
                 </div>
-                
-                <!-- Panel 2 -->
-                <div class="gateway-panel panel-right group-hover">
+                <div class="gateway-panel panel-right">
                     <div class="panel-content">
                         <h2>Reeds Communication Network Ltd.</h2>
                         <p class="panel-desc">A technology and systems engineering company focused on advanced digital solutions such as enterprise artificial intelligence, cybersecurity, robotics and drones, surveillance systems, infrastructure monitoring platforms, digital transformation systems, and strategic technology consulting.</p>
@@ -80,11 +115,12 @@
                     </div>
                     <div class="panel-graphics highlight-cyan"></div>
                 </div>
-
             </div>
         </section>
 
-        <!-- Technology, Infrastructure and Innovation -->
+        <hr class="section-divider">
+
+        <!-- Mission -->
         <section class="mission-section section-padding">
             <div class="container text-center max-w-lg fade-in-up">
                 <h2 class="section-title">Technology, Infrastructure, and Innovation</h2>
@@ -98,34 +134,48 @@
                 <h2 class="section-title text-center mb-lg">Industries Served</h2>
                 <div class="grid-cards">
                     <div class="card industry-card hover-glow">
-                        <div class="icon">🏛️</div>
+                        <div class="icon-container icon-cyan">
+                            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+                        </div>
                         <h3>Government & Public Sector</h3>
                     </div>
                     <div class="card industry-card hover-glow">
-                        <div class="icon">🏗️</div>
+                        <div class="icon-container icon-blue">
+                            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="9" y1="6" x2="9.01" y2="6"/><line x1="15" y1="6" x2="15.01" y2="6"/><line x1="9" y1="10" x2="9.01" y2="10"/><line x1="15" y1="10" x2="15.01" y2="10"/><line x1="9" y1="14" x2="9.01" y2="14"/><line x1="15" y1="14" x2="15.01" y2="14"/><path d="M9 22v-4h6v4"/></svg>
+                        </div>
                         <h3>Infrastructure & Construction</h3>
                     </div>
                     <div class="card industry-card hover-glow">
-                        <div class="icon">📡</div>
+                        <div class="icon-container icon-cyan">
+                            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg>
+                        </div>
                         <h3>Telecommunications</h3>
                     </div>
                     <div class="card industry-card hover-glow">
-                        <div class="icon">💼</div>
+                        <div class="icon-container icon-red">
+                            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                        </div>
                         <h3>Financial Services</h3>
                     </div>
                     <div class="card industry-card hover-glow">
-                        <div class="icon">🏭</div>
+                        <div class="icon-container icon-blue">
+                            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/></svg>
+                        </div>
                         <h3>Industrial Operations</h3>
                     </div>
                     <div class="card industry-card hover-glow">
-                        <div class="icon">💻</div>
+                        <div class="icon-container icon-cyan">
+                            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
                         <h3>Enterprise Technology</h3>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Innovation & Systems Development -->
+        <hr class="section-divider">
+
+        <!-- Innovation -->
         <section class="innovation-section section-padding">
             <div class="container fade-in-up">
                 <div class="layout-split">
@@ -147,7 +197,7 @@
             </div>
         </section>
 
-        <!-- Insights / Intelligence -->
+        <!-- Insights -->
         <section class="insights-section section-padding bg-alt">
             <div class="container fade-in-up">
                 <h2 class="section-title text-center mb-lg">Intelligence & Insights</h2>
@@ -157,7 +207,7 @@
                         <h3>Artificial Intelligence in African Enterprises</h3>
                     </article>
                     <article class="card insight-card hover-glow">
-                        <div class="insight-meta">Security</div>
+                        <div class="insight-meta text-accent-red">Security</div>
                         <h3>Cybersecurity Risks Facing Modern Organizations</h3>
                     </article>
                     <article class="card insight-card hover-glow">
@@ -172,38 +222,55 @@
             </div>
         </section>
 
-        <!-- CTA Section -->
+        <!-- CTA -->
         <section id="contact" class="cta-section section-padding">
             <div class="container text-center max-w-lg fade-in-up">
                 <h2 class="section-title cta-title">Partner With Reeds Companies</h2>
                 <p class="section-lead mb-lg">We invite governments, enterprises, and infrastructure organizations to collaborate on technology systems, communications infrastructure, security solutions, and digital modernization projects.</p>
                 <div class="cta-actions">
-                    <a href="javascript:void(0)" class="btn btn-primary">Contact Reeds Global Tech</a>
-                    <a href="javascript:void(0)" class="btn btn-primary highlight-cyan-btn">Contact Reeds Communication Network</a>
+                    <a href="contact.html" class="btn highlight-red-btn">Contact Reeds Global Tech</a>
+                    <a href="contact.html" class="btn highlight-cyan-btn">Contact Reeds Communication Network</a>
                 </div>
             </div>
         </section>
 
+        <!-- Partners -->
+        <section class="partners-section">
+            <div class="container fade-in-up">
+                <p class="partners-label">Trusted Across Industries</p>
+                <div class="partners-strip">
+                    <span class="partner-logo">Defence & Security</span>
+                    <span class="partner-logo">Energy & Utilities</span>
+                    <span class="partner-logo">Public Infrastructure</span>
+                    <span class="partner-logo">Financial Institutions</span>
+                    <span class="partner-logo">Telecom Operators</span>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- Footer -->
     <footer class="global-footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="footer-logo">REEDS GROUP</div>
+                    <p class="footer-tagline">Engineering intelligent systems and infrastructure for the modern world.</p>
                 </div>
                 <div class="footer-nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="global-tech.html">Reeds Global Tech</a></li>
-                        <li><a href="comm-network.html">Reeds Communication Network</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Insights</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    <div>
+                        <div class="footer-nav-title">Companies</div>
+                        <ul>
+                            <li><a href="global-tech.html">Reeds Global Tech</a></li>
+                            <li><a href="comm-network.html">Reeds Comm. Network</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="footer-nav-title">Company</div>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
