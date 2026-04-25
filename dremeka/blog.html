@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Dr. Wachuku Emeka Donald</title>
+  <meta name="description" content="Insights, reflections, and writings from Dr. Wachuku Emeka Donald on leadership, diplomacy, governance, and youth development.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Marked.js — lightweight Markdown parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">W<span>.</span>Emeka</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html#competencies">Expertise</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#lineage">Heritage</a></li>
+        <li><a href="index.html#awards">Awards</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Blog List View -->
+  <div id="blogListView">
+    <section class="blog-hero section">
+      <div class="container">
+        <div class="reveal visible">
+          <p class="section-label">Writings &amp; Reflections</p>
+          <h1 class="section-title">The Blog</h1>
+          <p style="color: var(--text-secondary); max-width: 560px; font-size: 1.05rem; line-height: 1.7;">
+            Thoughts on leadership, governance, diplomacy, and the journey of building institutions that endure.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="blog-list" id="blogList">
+          <!-- Blog cards injected by JS -->
+        </div>
+        <div class="blog-empty" id="blogEmpty" style="display: none;">
+          <p>No posts yet. Check back soon.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Blog Post View (hidden by default) -->
+  <div id="blogPostView" style="display: none;">
+    <section class="section">
+      <div class="blog-post-view">
+        <div class="blog-post-back" id="blogBackBtn">
+          ← Back to all posts
+        </div>
+        <div class="blog-post-header" id="blogPostHeader">
+          <!-- Injected by JS -->
+        </div>
+        <div class="blog-post-body" id="blogPostBody">
+          <!-- Rendered Markdown -->
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Wachuku Emeka Donald. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Profile</a>
+        <a href="blog.html">Blog</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
