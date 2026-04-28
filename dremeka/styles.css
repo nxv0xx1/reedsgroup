@@ -320,6 +320,18 @@ img {
   line-height: 1.7;
 }
 
+.hero-bio {
+  max-width: 560px;
+  margin-bottom: 24px;
+}
+
+.hero-bio p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
 .hero-credentials {
   display: flex;
   flex-wrap: wrap;
@@ -991,6 +1003,12 @@ img {
   }
 
   .hero-tagline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-bio {
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
